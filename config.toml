@@ -2,8 +2,8 @@
 
 
 format = '''
-[╭─](248) $directory$git_branch$git_status$fill $time
-[╰─](248)  '''
+╭─ $directory$git_branch$git_status$fill $time
+╰─  '''
 
 [directory]
 style = 'white'
@@ -17,7 +17,7 @@ style = 'red'
 
 [fill]
 symbol = '─'
-style = '248'
+style = 'white'
 
 [time]
 disabled = false
