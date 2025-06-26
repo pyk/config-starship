@@ -12,8 +12,9 @@ Download config:
 gh repo clone pyk/config-starship ~/.config/starship
 ```
 
-Set the environment variable in `~/.zshrc`:
+Add the following lines to `~/.zshrc`:
 
 ```shell
 export STARSHIP_CONFIG=~/.config/starship/config.toml
+eval "$(starship init zsh)"
 ```
