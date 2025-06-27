@@ -1,25 +1,29 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-add_newline = false
+add_newline = true
 
 format = '''
-╭─ $directory$git_branch$git_status$fill
-╰─  '''
+[╭─](1) $directory$git_branch$git_status$fill
+[╰─](1) [](7) '''
 
 [directory]
-style = 'white'
+style = '7 bold'
 
 [git_branch]
 format='[$symbol$branch(:$remote_branch)]($style) '
 symbol = ' '
-style = 'green'
+style = '5'
 
 [git_status]
-style = 'red'
+format = '[$all_status$ahead_behind]($style) '
+style = '6'
+conflicted = ''
+ahead = ''
+modified = ''
 
 [fill]
 symbol = '─'
-style = '249'
+style = '1'
 
 [time]
 disabled = false
