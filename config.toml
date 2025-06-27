@@ -3,7 +3,7 @@
 add_newline = true
 
 format = '''
-[╭─](1) $directory$git_branch$git_status$fill
+[╭─](1) $directory$git_branch$git_status
 [╰─](1) [](7) '''
 
 [directory]
