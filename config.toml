@@ -18,6 +18,7 @@ style = '5'
 format = '[$all_status$ahead_behind]($style) '
 style = '6'
 conflicted = ''
+untracked = ''
 ahead = ''
 modified = ''
 
