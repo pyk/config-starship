@@ -8,12 +8,12 @@ format = '''
 
 [directory]
 format = '[](15)[ $path]($style)[$read_only]($read_only_style)[](15) '
-style = 'fg:0 bg:15 bold'
+style = 'fg:0 bg:15'
 
 [git_branch]
 format='[](#1e1e1e)[$symbol$branch(:$remote_branch)]($style)[](#1e1e1e) '
 symbol = ' '
-style = 'bg:#1e1e1e fg:#ababab bold'
+style = 'bg:#1e1e1e fg:#ababab'
 
 [git_status]
 format = '[$all_status$ahead_behind]($style)'
