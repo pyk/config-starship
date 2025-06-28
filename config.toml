@@ -7,12 +7,13 @@ format = '''
 ╰─ [](15) '''
 
 [directory]
-style = '15 bold'
+format = '[](15)[ $path]($style)[$read_only]($read_only_style)[](15) '
+style = 'fg:0 bg:15 bold'
 
 [git_branch]
 format='[](#1e1e1e)[$symbol$branch(:$remote_branch)]($style)[](#1e1e1e) '
 symbol = ' '
-style = 'bg:#1e1e1e fg:#ababab'
+style = 'bg:#1e1e1e fg:#ababab bold'
 
 [git_status]
 format = '[$all_status$ahead_behind]($style)'
