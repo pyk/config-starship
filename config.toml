@@ -3,8 +3,8 @@
 add_newline = true
 
 format = '''
-[╭─](1) $directory$git_branch
-[╰─](1) [](7) '''
+╭─ $directory$git_branch
+╰─  '''
 
 [directory]
 style = '7 bold'
