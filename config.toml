@@ -4,15 +4,15 @@ add_newline = true
 
 format = '''
 ╭─ $directory$git_branch
-╰─  '''
+╰─ [](15) '''
 
 [directory]
-style = '7 bold'
+style = '15 bold'
 
 [git_branch]
-format='[$symbol$branch(:$remote_branch)]($style) '
+format='[](#1e1e1e)[$symbol$branch(:$remote_branch)]($style)[](#1e1e1e) '
 symbol = ' '
-style = '5'
+style = 'bg:#1e1e1e fg:#ababab'
 
 [git_status]
 format = '[$all_status$ahead_behind]($style)'
