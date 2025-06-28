@@ -7,8 +7,8 @@ format = '''
 ╰─ [](15) '''
 
 [directory]
-format = '[](15)[ $path]($style)[$read_only]($read_only_style)[](15) '
-style = 'fg:0 bg:15'
+format = '[](#4E4E4E)[ $path]($style)[$read_only]($read_only_style)[](#4E4E4E) '
+style = 'fg:#FFFFFF bg:#4E4E4E'
 
 [git_branch]
 format='[](#1e1e1e)[$symbol$branch(:$remote_branch)]($style)[](#1e1e1e) '
