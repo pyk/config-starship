@@ -3,17 +3,21 @@
 add_newline = true
 
 format = '''
-╭─ $directory$git_branch
-╰─ [](15) '''
+╭─ $directory$git_branch$python
+╰─ $character'''
+
+[character]
+success_symbol = "[](#ffffff)"
+error_symbol = "[](#ff565f)"
 
 [directory]
 format = '[ $path]($style)[$read_only]($read_only_style) '
 style = 'fg:#FFFFFF'
 
 [git_branch]
-format = '[](#1e1e1e)[$symbol$branch(:$remote_branch)]($style)[](#1e1e1e) '
+format = '[](#1f1f1f)[$symbol$branch(:$remote_branch)]($style)[](#1f1f1f) '
 symbol = ' '
-style = 'bg:#1e1e1e fg:#ababab'
+style = 'bg:#1f1f1f fg:#ededed'
 
 [git_status]
 format = '[$all_status$ahead_behind]($style)'
@@ -34,5 +38,7 @@ disabled = false
 format = '[󰥔 $time]($style)'
 style = 'white'
 
-[character]
-success_symbol = '[➜](bold green)'
+[python]
+format = '[](#0B2211)[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\))]($style)[](#0B2211)'
+symbol = " "
+style = "bg:#0B2211 fg:#00ca50"
