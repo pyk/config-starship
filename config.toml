@@ -7,11 +7,11 @@ format = '''
 ╰─ [](15) '''
 
 [directory]
-format = '[](#4E4E4E)[ $path]($style)[$read_only]($read_only_style)[](#4E4E4E) '
-style = 'fg:#FFFFFF bg:#4E4E4E'
+format = '[ $path]($style)[$read_only]($read_only_style) '
+style = 'fg:#FFFFFF'
 
 [git_branch]
-format='[](#1e1e1e)[$symbol$branch(:$remote_branch)]($style)[](#1e1e1e) '
+format = '[](#1e1e1e)[$symbol$branch(:$remote_branch)]($style)[](#1e1e1e) '
 symbol = ' '
 style = 'bg:#1e1e1e fg:#ababab'
 
@@ -34,7 +34,5 @@ disabled = false
 format = '[󰥔 $time]($style)'
 style = 'white'
 
-[character] 
+[character]
 success_symbol = '[➜](bold green)'
-
-
