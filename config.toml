@@ -1,23 +1,24 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 add_newline = true
+palette = "helix"
 
 format = '''
 ╭─ $directory$git_branch$python
 ╰─ $character'''
 
 [character]
-success_symbol = "[](#ffffff)"
-error_symbol = "[](#ff565f)"
+success_symbol = "[](lilac)"
+error_symbol = "[](apricot)"
 
 [directory]
 format = '[ $path]($style)[$read_only]($read_only_style) '
 style = 'fg:#FFFFFF'
 
 [git_branch]
-format = '[](#1f1f1f)[$symbol$branch(:$remote_branch)]($style)[](#1f1f1f) '
+format = '[](revolver)[$symbol$branch(:$remote_branch)]($style)[](revolver) '
 symbol = ' '
-style = 'bg:#1f1f1f fg:#ededed'
+style = 'bg:revolver fg:lilac'
 
 [git_status]
 format = '[$all_status$ahead_behind]($style)'
@@ -39,6 +40,15 @@ format = '[󰥔 $time]($style)'
 style = 'white'
 
 [python]
-format = '[](#0B2211)[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\))]($style)[](#0B2211)'
+format = '[](bossanova)[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\))]($style)[](bossanova)'
 symbol = " "
-style = "bg:#0B2211 fg:#00ca50"
+style = "bg:bossanova fg:mint"
+
+[palettes.helix]
+revolver = "#281733"
+bossanova = "#452859"
+lilac = "#dbbfef"
+comet = "#5a5977"
+white = "#ffffff"
+apricot = "#f47868"
+mint = "#9ff28f"
