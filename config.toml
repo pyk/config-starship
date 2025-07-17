@@ -1,24 +1,24 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 add_newline = true
-palette = "helix"
+palette = "mosswood"
 
 format = '''
 ╭─ $directory$git_branch$python
 ╰─ $character'''
 
 [character]
-success_symbol = "[](white)"
-error_symbol = "[](white)"
+success_symbol = "[](fg)"
+error_symbol = "[](fg)"
 
 [directory]
 format = '[ $path]($style)[$read_only]($read_only_style) '
-style = 'fg:white'
+style = 'fg:fg'
 
 [git_branch]
-format = '[](revolver)[$symbol$branch(:$remote_branch)]($style)[](revolver) '
+format = '[](git.bg)[$symbol$branch(:$remote_branch)]($style)[](git.bg) '
 symbol = ' '
-style = 'bg:revolver fg:lilac'
+style = 'bg:git.bg fg:git.fg'
 
 [git_status]
 format = '[$all_status$ahead_behind]($style)'
@@ -52,3 +52,9 @@ comet = "#5a5977"
 white = "#ffffff"
 apricot = "#f47868"
 mint = "#9ff28f"
+
+[palettes.mosswood]
+fg = "#99BEA5"
+"git.bg" = "#0A211C"
+"git.fg" = "#99BEA5"
+
