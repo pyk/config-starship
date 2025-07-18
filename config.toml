@@ -4,8 +4,8 @@ add_newline = true
 palette = "mosswood"
 
 format = '''
-╭─ $directory$git_branch$python
-╰─ $character'''
+[╭─](prompt.fg) $directory$git_branch$python
+[╰─](prompt.fg) $character'''
 
 [character]
 success_symbol = "[](fg)"
@@ -55,6 +55,8 @@ mint = "#9ff28f"
 
 [palettes.mosswood]
 fg = "#99BEA5"
+"prompt.fg" = "#99BEA5"
 "git.bg" = "#0A211C"
 "git.fg" = "#99BEA5"
+
 
