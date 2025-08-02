@@ -40,9 +40,9 @@ format = '[󰥔 $time]($style)'
 style = 'white'
 
 [python]
-format = '[](bossanova)[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\))]($style)[](bossanova)'
+format = '[](git.bg)[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\))]($style)[](git.bg)'
 symbol = " "
-style = "bg:bossanova fg:mint"
+style = "bg:git.bg fg:git.fg"
 
 [palettes.helix]
 revolver = "#281733"
