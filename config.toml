@@ -1,24 +1,24 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 add_newline = true
-palette = "mosswood"
+palette = "rich"
 
 format = '''
 [╭─](prompt.fg) $directory$git_branch$python
 [╰─](prompt.fg) $character'''
 
 [character]
-success_symbol = "[](fg)"
-error_symbol = "[](fg)"
+success_symbol = "[](prompt.fg.active)"
+error_symbol = "[](prompt.fg.active)"
 
 [directory]
 format = '[ $path]($style)[$read_only]($read_only_style) '
-style = 'fg:fg'
+style = 'fg:prompt.fg.active'
 
 [git_branch]
-format = '[](git.bg)[$symbol$branch(:$remote_branch)]($style)[](git.bg) '
+format = '[](badge.bg)[$symbol$branch(:$remote_branch)]($style)[](badge.bg) '
 symbol = ' '
-style = 'bg:git.bg fg:git.fg'
+style = 'bg:badge.bg fg:badge.fg'
 
 [git_status]
 format = '[$all_status$ahead_behind]($style)'
@@ -40,9 +40,9 @@ format = '[󰥔 $time]($style)'
 style = 'white'
 
 [python]
-format = '[](git.bg)[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\))]($style)[](git.bg)'
+format = '[](badge.bg)[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\))]($style)[](badge.bg)'
 symbol = " "
-style = "bg:git.bg fg:git.fg"
+style = "bg:badge.bg fg:badge.fg"
 
 [palettes.helix]
 revolver = "#281733"
@@ -58,5 +58,11 @@ fg = "#99BEA5"
 "prompt.fg" = "#99BEA5"
 "git.bg" = "#0A211C"
 "git.fg" = "#99BEA5"
+
+[palettes.rich]
+"prompt.fg" = "#62666D"
+"prompt.fg.active" = "#F7F8F8"
+"badge.bg" = "#141516"
+"badge.fg" = "#62666D"
 
 
