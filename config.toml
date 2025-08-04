@@ -60,9 +60,9 @@ fg = "#99BEA5"
 "git.fg" = "#99BEA5"
 
 [palettes.rich]
-"prompt.fg" = "#62666D"
+"prompt.fg" = "#8A8F98"
 "prompt.fg.active" = "#F7F8F8"
 "badge.bg" = "#141516"
-"badge.fg" = "#62666D"
+"badge.fg" = "#8A8F98"
 
 
