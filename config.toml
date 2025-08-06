@@ -4,12 +4,18 @@ add_newline = true
 palette = "rich"
 
 format = '''
-[╭─](prompt.fg) $directory$git_branch$python
+[╭─](prompt.fg) $hostname$directory$git_branch$python
 [╰─](prompt.fg) $character'''
 
 [character]
-success_symbol = "[](prompt.fg.active)"
-error_symbol = "[](prompt.fg.active)"
+success_symbol = "[](prompt.fg.active)"
+error_symbol = "[](prompt.fg.active)"
+
+[hostname]
+ssh_only = false
+format = "[ $hostname]($style) "
+disabled = false
+style = 'fg:prompt.fg.active'
 
 [directory]
 format = '[ $path]($style)[$read_only]($read_only_style) '
