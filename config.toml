@@ -1,8 +1,6 @@
-"$schema" = 'https://starship.rs/config-schema.json'
-
+"$schema" = "https://starship.rs/config-schema.json"
 add_newline = true
 palette = "rich"
-
 format = '''
 [╭─](prompt.fg) $hostname$directory$git_branch$python
 [╰─](prompt.fg) $character'''
@@ -15,35 +13,35 @@ error_symbol = "[](prompt.fg.active)"
 ssh_only = false
 format = "[ $hostname]($style) "
 disabled = false
-style = 'fg:prompt.fg.active'
+style = "fg:prompt.fg.active"
 
 [directory]
-format = '[ $path]($style)[$read_only]($read_only_style) '
-style = 'fg:prompt.fg.active'
+format = "[](badge.bg)[ $path]($style)[$read_only]($read_only_style)[](badge.bg) "
+style = "bg:badge.bg fg:badge.fg"
 
 [git_branch]
-format = '[](badge.bg)[$symbol$branch(:$remote_branch)]($style)[](badge.bg) '
-symbol = ' '
-style = 'bg:badge.bg fg:badge.fg'
+format = "[](badge.bg)[$symbol$branch(:$remote_branch)]($style)[](badge.bg) "
+symbol = " "
+style = "bg:badge.bg fg:badge.fg"
 
 [git_status]
-format = '[$all_status$ahead_behind]($style)'
-style = '6'
-staged = ' '
-conflicted = ' '
-untracked = ' '
-ahead = ''
-modified = ' '
-deleted = ' '
+format = "[$all_status$ahead_behind]($style)"
+style = "6"
+staged = " "
+conflicted = " "
+untracked = " "
+ahead = ""
+modified = " "
+deleted = " "
 
 [fill]
-symbol = '─'
-style = '1'
+symbol = "─"
+style = "1"
 
 [time]
 disabled = false
-format = '[󰥔 $time]($style)'
-style = 'white'
+format = "[󰥔 $time]($style)"
+style = "white"
 
 [python]
 format = '[](badge.bg)[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\))]($style)[](badge.bg)'
@@ -70,5 +68,4 @@ fg = "#99BEA5"
 "prompt.fg.active" = "#F7F8F8"
 "badge.bg" = "#141516"
 "badge.fg" = "#8A8F98"
-
 
